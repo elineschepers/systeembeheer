@@ -1,0 +1,1 @@
+rsync -e 'ssh -p 22345' -avzp /etc r0745170@leia.uclllabs.be:~/backup_server
