@@ -1,0 +1,9 @@
+[Unit]
+Description=static arp for default gateway command run at reboot.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/static_arp_gateway
+
+[Install]
+WantedBy=multi-user.target
