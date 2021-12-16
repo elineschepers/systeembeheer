@@ -1,0 +1,26 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	eline-schepers.uclllabs.be. root.eline-schepers.sb.uclllabs.be. (
+			      2		; Serial
+			    301		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			   300 )	; Negative Cache TTL
+
+; ns
+eline-schepers.sb.uclllabs.be
+	IN	NS	ns.eline-schepers.sb.uclllabs.be.
+eline-schepers.sb.uclllabs.be       IN      NS      ns1.uclllabs.be.
+eline-schepers.sb.uclllabs.be       IN      NS      ns2.uclllabs.be.
+; slave
+
+
+; A records
+@	IN	A	193.191.177.143
+ns	IN	A	193.191.177.143
+www	IN	A	193.191.177.143
+test	IN	A	193.191.177.254
+www1	IN	A	193.191.177.143
+www2	IN	A	193.191.177.143

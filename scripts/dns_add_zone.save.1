@@ -1,0 +1,63 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+        echo "Please run this command as root user"
+        exit
+fi
+
+
+#get param
+zone=$1
+
+FILENAME='db.'"$zone"'.marko-kosmajac.sb.uclllabs.be'
+FILE=/etc/bind/zones/$FILENAME
+if test -f "$FILE"; then
+        echo 'the zone '"$1"' already exists!'
+else
+echo 'start zone creation'
+
+#add the zone to named.conf.local
+input="/etc/bind/named.conf.local"
+echo 'zone "'"$zone"'.marko-kosmajac.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/'"$FILENAME"'";
+};
+' >> $input
+
+#Create db file!
+output=/etc/bind/zones/$FILENAME
+echo 'creating file with name : '"$FILENAME"
+echo '
+$TTL 300     ;86400
+$ORIGIN '"$zone"'.marko-kosmajac.sb.uclllabs.be.
+@       IN      SOA    ns.'"$zone"'.marko-kosmajac.sb.uclllabs.be. root.marko-kosmajac.sb.uclllabs.be. (
+                                10              ;Serial
+                                604800          ;Refresh
+                                86400           ;Retry
+                                2419200         ;Expire
+                                86400 )         ;Negative Cache TTL
+;Name servers
+@       IN      NS      ns.'"$zone"'.marko-kosmajac.sb.uclllabs.be.
+@       IN      NS      ns.marko-kosmajac.sb.uclllabs.be.
+;A records
+ns      IN       A      193.191.177.180
+@       IN       A      193.191.177.180
+' >> $output
+
+#do an update to my db main file
+DBFILE=/etc/bind/zones/db.marko-kosmajac.sb.uclllabs.be
+echo "$zone"'	IN	NS	ns.marko-kosmajac.sb.uclllabs.be.' >> $DBFILE
+
+#forgot to update serial
+Serial=$(grep 'Serial' /etc/bind/zones/db.marko-kosmajac.sb.uclllabs.be)
+SerialNumber=$(echo $Serial | sed 's/[^0-9]*//g')
+((SerialNumber++))
+newSerial='                                '"$SerialNumber"'        ;Serial'
+sed -i "s/.*Serial.*/\t\t\t      $newSerial/g" /etc/bind/zones/db.marko-kosmajac.sb.uclllabs.be
+
+
+echo 'bind9 restart'
+systemctl restart bind9
+
+echo 'ended'
+fi

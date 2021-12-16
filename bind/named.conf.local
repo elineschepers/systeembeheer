@@ -1,0 +1,1441 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+zone "eline-schepers.sb.uclllabs.be"{
+	notify yes; 
+	type master; 
+	file "/etc/bind/db.eline-schepers.sb.uclllabs.be";
+	allow-transfer{
+		localhost;
+		193.191.176.254;
+		193.191.177.4;
+		193.191.177.203;};
+};
+
+zone "ward-scherens.sb.uclllabs.be"{
+	type slave;
+	masters {193.191.177.203;};
+	file "/etc/bind/zones/db.ward-scherens.sb.uclllabs.be";
+};
+zone "dinsdag.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.dinsdag.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoim0ph.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoim0ph.eline-schepers.sb.uclllabs.be";
+};
+
+zone "woensdag.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.woensdag.eline-schepers.sb.uclllabs.be";
+};
+
+zone "donderdag.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.donderdag.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesha7fe.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesha7fe.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaexah1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaexah1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeiw0ch.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeiw0ch.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneudohy0.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneudohy0.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonegaeth5.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonegaeth5.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonebu1igh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonebu1igh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekoib6v.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekoib6v.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaig3do.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaig3do.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahp4ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahp4ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiuph7f.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiuph7f.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeequ8c.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeequ8c.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonecoh9ee.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonecoh9ee.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonegiu1ie.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonegiu1ie.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohb9ze.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohb9ze.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneib2eik.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneib2eik.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonewahf6z.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonewahf6z.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonebah1ee.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonebah1ee.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexi8esh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexi8esh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeiy2ah.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeiy2ah.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneyeiqu1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneyeiqu1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonethov6i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonethov6i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeph2fe.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeph2fe.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonezeer2a.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonezeer2a.eline-schepers.sb.uclllabs.be";
+};
+
+zone "verjaardagje.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.verjaardagje.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephe7bi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephe7bi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonehail6u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonehail6u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneegoh0i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneegoh0i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesi6eez.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesi6eez.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohcho6.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohcho6.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneulo8ph.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneulo8ph.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuufah2.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuufah2.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneapaim7.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneapaim7.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonein2bai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonein2bai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonegaig5e.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonegaig5e.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonetee9cu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonetee9cu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonejeez4n.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonejeez4n.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonefoh1pa.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonefoh1pa.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeegu3p.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeegu3p.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuogoo8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuogoo8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoosh9i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoosh9i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequei6x.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequei6x.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonecoi9pa.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonecoi9pa.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuxuo6z.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuxuo6z.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonefo2goh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonefo2goh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequee9x.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequee9x.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonemiez0f.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonemiez0f.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonegaeph8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonegaeph8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephoh0k.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephoh0k.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaes9ye.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaes9ye.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneookee7.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneookee7.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneishie6.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneishie6.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahtai1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahtai1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuqu5ri.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuqu5ri.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonebeith0.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonebeith0.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaixi1o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaixi1o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneazeik3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneazeik3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonemee0ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonemee0ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedoob4i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedoob4i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuzai7o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuzai7o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesaigo3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesaigo3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiethu7.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiethu7.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeik6ua.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeik6ua.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiefai0.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiefai0.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneah3ooj.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneah3ooj.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneou9gie.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneou9gie.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeigh2w.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeigh2w.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiho4no.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiho4no.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonehah2ei.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonehah2ei.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonean9aig.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonean9aig.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonecheir3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonecheir3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedoh2oh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedoh2oh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonegei8ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonegei8ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneyai9zo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneyai9zo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoip9ox.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoip9ox.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonebi8wae.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonebi8wae.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonefoh7ie.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonefoh7ie.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonethah8k.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonethah8k.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahla0i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahla0i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneug6ahk.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneug6ahk.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneegee0m.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneegee0m.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeekei3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeekei3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonere2bat.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonere2bat.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeefoo3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeefoo3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahn0ee.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahn0ee.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekej0si.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekej0si.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonenu1oom.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonenu1oom.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaena2l.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaena2l.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonepah9ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonepah9ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiel0tu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiel0tu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneje5xeo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneje5xeo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneal6iqu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneal6iqu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneto5hei.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneto5hei.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonehie6ko.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonehie6ko.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeig4qu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeig4qu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoo0eek.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoo0eek.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiu7too.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiu7too.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedae1du.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedae1du.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneif2nah.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneif2nah.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechae5o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechae5o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonevahf2a.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonevahf2a.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiefu2o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiefu2o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneez1tho.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneez1tho.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedei8sh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedei8sh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneia5eew.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneia5eew.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonenedei5.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonenedei5.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonemaer5z.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonemaer5z.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneboo1ix.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneboo1ix.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaim2co.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaim2co.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneungai4.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneungai4.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneveeth4.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneveeth4.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiagau5.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiagau5.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneukeig1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneukeig1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequah9o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequah9o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonezae8zi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonezae8zi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonelee3zo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonelee3zo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiesu5f.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiesu5f.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiet3ee.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiet3ee.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekoh3xi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekoh3xi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoong7u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoong7u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneain1ee.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneain1ee.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiecha9.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiecha9.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneae2ahg.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneae2ahg.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekee3bu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekee3bu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoogee1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoogee1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohzea2.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohzea2.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuth6te.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuth6te.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohy7zi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohy7zi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekiaze3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekiaze3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneothae6.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneothae6.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonezeu1aa.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonezeu1aa.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonemei7ax.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonemei7ax.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeib9ph.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeib9ph.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneowe1zi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneowe1zi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonebaesh2.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonebaesh2.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaeghi6.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaeghi6.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuewu1p.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuewu1p.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoth4xe.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoth4xe.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneish7ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneish7ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonerogah3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonerogah3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneieh6mo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneieh6mo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexae7ka.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexae7ka.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneda0yai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneda0yai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedibah1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedibah1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechain2.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechain2.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonezi6ia8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonezi6ia8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephii2v.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephii2v.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneax7mah.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneax7mah.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonethae8j.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonethae8j.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesucai3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesucai3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneti3jea.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneti3jea.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesie6zi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesie6zi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohci9k.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohci9k.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonepeeg4a.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonepeeg4a.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequee1x.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequee1x.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaepee8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaepee8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneamo4ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneamo4ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeiz6ir.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeiz6ir.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonetoo6ae.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonetoo6ae.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaicae7.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaicae7.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexuic7j.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexuic7j.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeev5ch.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeev5ch.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeeda0u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeeda0u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekagie5.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekagie5.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoova6e.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoova6e.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexaej4a.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexaej4a.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaowek4.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaowek4.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahbeb5.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahbeb5.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneea7ohd.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneea7ohd.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuigh8l.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuigh8l.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequun9r.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequun9r.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonewoh3ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonewoh3ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoe7een.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoe7een.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephae8v.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephae8v.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneneec7b.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneneec7b.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneech7ne.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneech7ne.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeepee9.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeepee9.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneol0sae.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneol0sae.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechohv8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechohv8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneshae3i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneshae3i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneyae1ze.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneyae1ze.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuchei8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuchei8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneag1ohl.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneag1ohl.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonenie6ei.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonenie6ei.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohch6v.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohch6v.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneecahj1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneecahj1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephe9oh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephe9oh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneshei1d.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneshei1d.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneshee1y.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneshee1y.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonekae8le.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonekae8le.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneugaqu8.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneugaqu8.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequoo8z.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequoo8z.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneosh0sa.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneosh0sa.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneait6ch.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneait6ch.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonevoo4ko.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonevoo4ko.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneielei4.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneielei4.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonelah6cu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonelah6cu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexeeb8r.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexeeb8r.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeif7ja.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeif7ja.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechew9i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechew9i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahk5eo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahk5eo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneofi0we.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneofi0we.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequoh3n.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequoh3n.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonecoo1ii.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonecoo1ii.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneze4fo3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneze4fo3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonenai3qu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonenai3qu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneum6aev.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneum6aev.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonepoow3o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonepoow3o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohph8u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohph8u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneta0oey.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneta0oey.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonepiep6w.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonepiep6w.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohk6ph.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohk6ph.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonefoos5i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonefoos5i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaike5i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaike5i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaohah9.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaohah9.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeana0s.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeana0s.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeici0u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeici0u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneyuur6n.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneyuur6n.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneuiyo5l.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneuiyo5l.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonegeiv8s.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonegeiv8s.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechej5u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechej5u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohp4oo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohp4oo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneweg1oh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneweg1oh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonehie5ne.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonehie5ne.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneke8wa3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneke8wa3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexe0xai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexe0xai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneixoh8r.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneixoh8r.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeitie2.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeitie2.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonelaev2r.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonelaev2r.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeic6ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeic6ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonenah0ei.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonenah0ei.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahyoo0.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahyoo0.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonenox4ti.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonenox4ti.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneun8pha.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneun8pha.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonepeeph1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonepeeph1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoi6xie.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoi6xie.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaked3w.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaked3w.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonejee7mo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonejee7mo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohph3i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohph3i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesae1ai.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesae1ai.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonepoh8yu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonepoh8yu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahr1ph.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahr1ph.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephuh6v.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephuh6v.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneoa3ovo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneoa3ovo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneahth5e.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneahth5e.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeich9z.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeich9z.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneevoh5g.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneevoh5g.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonemei1bo.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonemei1bo.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneho3shu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneho3shu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonefuos6c.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonefuos6c.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedo5che.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedo5che.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonecae0co.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonecae0co.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneiequ6i.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneiequ6i.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneook6ee.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneook6ee.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneatoch9.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneatoch9.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechei9u.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechei9u.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohsei1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohsei1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaehai1.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaehai1.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonexai8ke.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonexai8ke.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneohtoo2.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneohtoo2.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonelee4he.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonelee4he.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneej0see.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneej0see.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedeong0.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedeong0.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonelie7cu.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonelie7cu.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonephaip7.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonephaip7.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonedai5ru.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonedai5ru.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneyohc5e.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneyohc5e.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneeru6uy.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneeru6uy.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneof9iev.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneof9iev.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechae4a.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechae4a.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequeeh9.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequeeh9.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneciey3d.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneciey3d.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonesaang4.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonesaang4.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonequei1o.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonequei1o.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonetha1bi.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonetha1bi.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneieth8a.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneieth8a.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzonechola3.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzonechola3.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaoz3oh.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaoz3oh.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneaemai5.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneaemai5.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneshai4r.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneshai4r.eline-schepers.sb.uclllabs.be";
+};
+
+zone "subzoneushuy4.eline-schepers.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.subzoneushuy4.eline-schepers.sb.uclll

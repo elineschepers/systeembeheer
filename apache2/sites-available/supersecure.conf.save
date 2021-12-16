@@ -1,0 +1,22 @@
+
+<VirtualHost *:80>
+        ServerAdmin eline-schepers@localhost
+        ServerName supersecure.eline-schepers.sb.uclllabs.be
+	Redirect permanent / https://supersecure.eline-schepers.sb.uclllabs.be/
+        ErrorLog ${APACHE_LOG_DIR}/supersecureerror.log
+        CustomLog ${APACHE_LOG_DIR}/supersecureaccess.log combined
+RewriteEngine on
+RewriteCond %{SERVER_NAME} =supersecure.eline-schepers.sb.uclllabs.be
+RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+</VirtualHost>
+
+<VirtualHost *:443>
+    SSLEngine on
+
+    ServerName supersecure.eline-schepers.sb.uclllabs.be
+   
+    SSLCertificateFile      /root/.acme.sh/eline-schepers.sb.uclllabs.be/fullchain.privkey
+    SSLCertificateKeyFile   /root/.acme.sh/eline-schepers.sb.uclllabs.be/eline-schepers.sb.uclllabs.be.key
+
+    Protocols h2 http/1.1
+</VirtualHost>
